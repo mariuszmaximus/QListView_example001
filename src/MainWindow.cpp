@@ -70,7 +70,10 @@ MainWindow::MainWindow(QWidget *parent) :
 	layoutMain->addWidget(messageList);
 	layoutMain->addWidget(btnDeleteAll);
 
-	resize(640, 480);
+    	resize(1024, 768);
+//	messageList->setIconSize(QSize(128*2,128));
+//    	messageList->setResizeMode(QListView::Adjust);//(QListView::Fixed);
+//    	messageList->setViewMode(QListView::IconMode);
 
 	connect(btnPost, &QPushButton::clicked, [messageList, cmbType,
 			editMessage](){
